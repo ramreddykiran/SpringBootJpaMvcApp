@@ -10,6 +10,10 @@ table#t1 {
 	border:1px solid red;
 	color:white;
 }
+table#t1 td {
+	background-color:white;
+	color:#803f1d;
+}
 table#t2 {
 	background-color:cyan;
 }

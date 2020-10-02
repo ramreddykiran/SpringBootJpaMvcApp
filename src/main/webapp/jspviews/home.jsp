@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>welcome</title>
+<link rel="stylesheet" href="/css/anchor-styles.css">
 </head>
 <body>
 		<font color="BLUE" size="12"> 
@@ -16,7 +17,7 @@
 		</font> <br> <br>
 		
 		<font color="brown" size="7">
-			click <a href="/customer/all"> here </a>  for customers page 
+			click <a href="/customer/"> here </a>  for customers page 
 		</font> <br>
 </body>
 </html>

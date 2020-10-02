@@ -9,6 +9,7 @@
 <meta charset="UTF-8">
 <title>Products</title>
 <link rel="stylesheet" href="/css/table-styles.css">
+<link rel="stylesheet" href="/css/anchor-styles.css">
 </head>
 <body>
 	<h3><font color="orange">  Available Products   </font></h3>
@@ -33,7 +34,7 @@
 		
 	<br>
 	<br> 
-	<font color="PINK" size="6"> 
+	<font color="GREEN" size="6"> 
 		click <a href="/home/">here </a> to go to home page
 	</font>
 	 

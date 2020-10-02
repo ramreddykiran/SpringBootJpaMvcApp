@@ -13,18 +13,26 @@ Run "gradle clean eclipse" if you face any dependencies issues with tomcat-jaspe
 -- H2 DB : application.properties
 	jdbc:h2:mem:local  here local is the DB name . 
 	  
-	After starting the application, login to H2 DB from browser
+-- After starting the application, login to H2 DB from browser
 	
 	http://localhost:8080/h2-console 
 		JDBC URL : jdbc:h2:mem:local
 		UserName : sa
-	do not change username and password (no password needed) and connect
+
+do not change username and password (no password needed) and connect
 	
 -- you can find product table. data.sql under src/main/resources loads the data in DB
 	select * from product; 
 
 -- 	 from  http://localhost:8080/home  , we can navigate to products page
 	
+-- access products  page directly
+
+	http://localhost:8080/product/all
+	
+-- access customers  page directly		
+	
+	http://localhost:8080/customer/
 	
 	
 
