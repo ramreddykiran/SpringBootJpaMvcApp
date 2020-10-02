@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="pr"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
 <!DOCTYPE html>
@@ -15,19 +15,19 @@
 <body>
 
 	<!-- 
-	<c:if test="${fn:length(products) == 0}">
+	<pr:if test="${fn:length(products) == 0}">
             <p>No product details available. Please add some products in DB <p/>
-     </c:if>
+     </pr:if>
      -->
 	<!--  No direct if else option avilable in JSP . 
      	we can use below to achieve that-->
-	<c:choose>
-		<c:when test="${fn:length(products) == 0}">
+	<pr:choose>
+		<pr:when test="${fn:length(products) == 0}">
 			<p style="color:brown;font-size:20px;font-family:'Courier New';"> 
 				No product details available. Please add some products in DB/data.sql file
 			<p/>
-		</c:when>
-		<c:otherwise>
+		</pr:when>
+		<pr:otherwise>
 			<br>
 			<h3>
 				<font color="orange"> Available Products </font>
@@ -40,18 +40,18 @@
 					<th>Price</th>
 				</tr>
 
-				<c:forEach var="product" items="${products}">
+				<pr:forEach var="product" items="${products}">
 					<tr>
-						<td><c:out value="${product.pId}" /></td>
-						<td><c:out value="${product.pName}" /></td>
-						<td><c:out value="${product.description}" /></td>
-						<td><c:out value="${product.price}" /></td>
+						<td><pr:out value="${product.pId}" /></td>
+						<td><pr:out value="${product.pName}" /></td>
+						<td><pr:out value="${product.description}" /></td>
+						<td><pr:out value="${product.price}" /></td>
 					</tr>
-				</c:forEach>
+				</pr:forEach>
 
 			</table>
-		</c:otherwise>
-	</c:choose>
+		</pr:otherwise>
+	</pr:choose>
 
 	<br>
 	<br>
@@ -65,10 +65,10 @@
 
 <!-- 	
 	<ol>
-		<c:forEach var="product" items="${products}">
+		<pr:forEach var="product" items="${products}">
 		
 			<li>${product}</li>
 			
-		</c:forEach>
+		</pr:forEach>
 	</ol>
 	 -->
