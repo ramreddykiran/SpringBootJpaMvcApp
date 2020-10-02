@@ -1,0 +1,40 @@
+table, td, th {
+	border:1px solid black;
+	border-collapse:collapse;
+}
+th {
+	text-align:left;
+}
+table#t1 {
+	background-color:#117788;
+	border:1px solid red;
+	color:white;
+}
+table#t2 {
+	background-color:cyan;
+}
+table#t3 tr:nth-child(even) {
+	background-color:#eee;
+}
+table#t3 tr:nth-child(odd) {
+	background-color:#fff;
+}
+table#t3 th {
+	color:brown;
+}
+table#t4 tr:nth-child(even){
+	background-color:#aaa;
+}
+table#t4 tr:nth-child(odd) {
+	background-color:#fff;
+}
+table#t4 thead {
+	color:grey;
+}
+table#t4 tbody {
+	color:blue;
+}
+table#t4 tfoot {
+	color:green;
+	font-size:22px;
+}
