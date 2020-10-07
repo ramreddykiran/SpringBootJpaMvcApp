@@ -35,7 +35,9 @@ do not change username and password (no password needed) and connect
 	http://localhost:8080/customer/
 	
 	
-
+-- From products home page, navigate to product details page by clicking on productId
+	direct URL : http://localhost:8080/product/Moto1PwrBlk
+	
 
 
 

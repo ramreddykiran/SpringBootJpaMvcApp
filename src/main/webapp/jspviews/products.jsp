@@ -42,7 +42,7 @@
 
 				<pr:forEach var="product" items="${products}">
 					<tr>
-						<td><pr:out value="${product.pId}" /></td>
+						<td> <a href="/product/${product.pId}"> <pr:out value="${product.pId}" /> </a></td>
 						<td><pr:out value="${product.pName}" /></td>
 						<td><pr:out value="${product.description}" /></td>
 						<td><pr:out value="${product.price}" /></td>

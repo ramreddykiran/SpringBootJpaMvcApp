@@ -21,4 +21,8 @@ public class ProductService {
 		return products;
 	}
 
+	public Product getProduct(String pId) {
+		return productRepository.findById(pId).orElse(new Product());
+	}
+
 }
